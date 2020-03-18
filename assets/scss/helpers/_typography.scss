@@ -1,0 +1,65 @@
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-base;
+    font-weight: 700;
+    margin: 0 0 1.2em;
+    color: $black;
+    &:last-child {
+        margin: 0;
+    }
+}
+/* Text Elements */
+p {
+    margin: 0 0 20px;
+    &:last-child {
+        margin: 0;
+    }
+}
+label {
+    margin-bottom: 30px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+h1,
+.title-h1 {
+    font-size: 24px;
+    @include mq(xs) {
+        @include font-size(24, 36);
+    }
+    @include mq(xxl) {
+        font-size: 36px;
+    }
+}
+
+h2,
+.title-h2,
+h2:not(.color-title) {
+    font-size: 18px;
+
+    @include mq(xs) {
+        @include font-size(18, 24);
+    }
+
+    @include mq(xxl) {
+        font-size: 24px;
+    }
+}
+
+h3,
+.title-h3 {
+    font-size: 16px;
+    @include mq(xs) {
+        @include font-size(16, 18);
+    }
+
+    @include mq(xxl) {
+        font-size: 18px;
+    }
+}

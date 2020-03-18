@@ -1,0 +1,101 @@
+// Inputs
+textarea,
+input[type="“text”"],
+input[type="“button”"],
+input[type="“submit”"],
+input[type="“search”"] {
+    -webkit-appearance: none;
+}
+input,
+textarea {
+    &:focus,
+    &:active,
+    &:hover {
+        outline: none;
+    }
+}
+
+// Make inputs on iOS look normal
+input[type="submit"]:disabled {
+    opacity: 0.35;
+    border: none;
+}
+input[type="submit"] {
+    border: none;
+    margin-bottom: 20px;
+}
+input:not([type="submit"]) {
+    height: 61px;
+    font-size: 14px;
+    font-weight: 300;
+    color: $black;
+
+    &:not([type="checkbox"]):not([type="radio"]) {
+        -webkit-appearance: none;
+    }
+}
+
+textarea,
+input:not([type="submit"]) {
+    display: block;
+    outline: none;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid $border-1;
+    background-color: rgba($white, 0.5);
+    &:focus {
+        border: 1px solid $color-7;
+        background-color: $white;
+    }
+    &.wpcf7-not-valid {
+        border: 1px solid $alert;
+        color: $alert-text;
+    }
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    padding: 20px 60px 20px 20px;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: $font-base;
+    color: $black;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    height: 183px;
+    resize: none;
+    overflow: auto;
+    padding: 28px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    color: $black;
+    span {
+        display: block;
+    }
+}
+.textarea-label.success:after {
+    bottom: 150px;
+    right: 25px;
+}
+.wpcf7-form {
+    p {
+        margin: 0 0 30px;
+    }
+}
+.wpcf7-form-control-wrap {
+    display: block;
+    padding-top: 14px;
+}
+
+.error {
+    color: $alert-text;
+}

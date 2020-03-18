@@ -1,0 +1,44 @@
+.none {
+    display: none !important;
+}
+.block {
+    display: block !important;
+}
+.none-md {
+    @include mq(md) {
+        display: none !important;
+    }
+}
+.none-lg {
+    @include mq(lg) {
+        display: none !important;
+    }
+}
+.none-xl {
+    @include mq(xl) {
+        display: none !important;
+    }
+}
+
+.block-lg {
+    @include mq(lg) {
+        display: block !important;
+    }
+}
+
+.block-xl {
+    @include mq(xl) {
+        display: block !important;
+    }
+}
+.flex-xl {
+    @include mq(xl) {
+        display: flex !important;
+    }
+}
+.close {
+    cursor: pointer;
+    display: block;
+    width: 25px;
+    height: 25px;
+}

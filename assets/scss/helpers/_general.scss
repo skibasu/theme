@@ -1,0 +1,185 @@
+//
+// ----------------------------------------
+// GENERAL
+//
+// The most general styles for
+// <html>, <body> and .container
+//
+// Set font and clear body padding
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    -webkit-overflow-scrolling: touch;
+}
+body {
+    overflow-x: hidden;
+}
+html,
+button,
+a,
+input,
+select,
+textarea {
+    font-family: $font-base;
+}
+html {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+    font-smoothing: antialiased;
+}
+body {
+    font-size: 14px;
+    line-height: $line-height-base;
+
+    //overflow-x: hidden;
+    margin: 0;
+
+    color: $color-txt;
+    -webkit-font-smoothing: antialiased;
+    -ms-scroll-limit-x-max: 100%;
+    -ms-scroll-limit-x-min: 0;
+
+    padding-top: 0;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 100%;
+    @include mq(md) {
+        width: auto;
+        max-width: 720px;
+    }
+    @include mq(lg) {
+        max-width: 960px;
+    }
+    @include mq(xl) {
+        max-width: 1140px;
+    }
+    @include mq(xxl) {
+        max-width: 1345px;
+    }
+}
+.container-fluid {
+    width: 100%;
+    padding: 0 15px;
+}
+
+figure {
+    margin: 0;
+}
+// Make all images responsive
+img {
+    height: auto;
+}
+img,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+// Normalize links across browsers
+a {
+    transition: color 0.15s ease-in;
+    text-decoration: none;
+    color: $link-color; //inherit;
+    outline: none;
+    word-wrap: break-word;
+    img {
+        border: 0;
+    }
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+        margin: 0;
+        position: relative;
+    }
+}
+ol {
+    margin: 0;
+    padding: 0;
+    list-style-position: inside;
+    li {
+        margin-bottom: 12px;
+    }
+    > li > ol {
+        list-style-type: lower-alpha;
+        padding-left: 10px;
+        > li {
+            margin-bottom: 0;
+        }
+    }
+}
+
+a:focus,
+a:hover,
+a:active {
+    color: $link-hover-color;
+    outline: none;
+}
+
+// WordPress specific base styles.
+
+.gm-style img {
+    max-width: none;
+}
+
+.media img,
+.media video,
+.media object,
+.media iframe {
+    width: 100%;
+    height: auto;
+}
+
+// Make WordPress media inserted to post behave correctly
+.wp-caption {
+    width: auto !important;
+    figure {
+        margin: 0;
+        width: auto !important;
+    }
+}
+
+// Make a 404 page look nicer and more readable
+
+// WP navigation menus are lists, but they don't need default list styling
+// nav ul li a {
+//     text-transform: lowercase;
+// }
+nav ul,
+footer {
+    ul {
+        margin: 0;
+        padding: 0;
+
+        list-style: none;
+    }
+    li {
+        display: inline-block;
+        margin-bottom: 0;
+    }
+    a {
+        color: inherit;
+    }
+}
+.page {
+    width: 100%;
+}
+.slick-slide,
+.slick-slide * {
+    outline: none !important;
+}
+.aligncenter {
+    margin: 0 auto;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+}
