@@ -1,6 +1,12 @@
 <?php
 /**
- * The static page template.
+ * The template for displaying all pages
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
+ *
+ * @package WordPress
+ * @subpackage theme
+ * @since 1.0.0
  */
 
 get_header();

@@ -1,4 +1,13 @@
 <?php
+/**
+ * Twenty Nineteen functions and definitions
+ *
+ * @link https://developer.wordpress.org/themes/basics/theme-functions/
+ *
+ * @package WordPress
+ * @subpackage theme
+ * @since 1.0.0
+ */
 
 /* global setting page  */
 require_once( get_template_directory() . '/includes/acf-settings-page/acf-settings-page.php' );
