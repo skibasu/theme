@@ -1,3 +1,4 @@
+const $ = jQuery;
 /* Ready */
 $(document).ready(() => {
 

@@ -13,7 +13,9 @@ get_header();
 the_post();
 ?>
 	<main class="page-content page-content--single">
-	
+	<article>
+    <?php the_content();?>
+    </article>
 	</main>
 <?php
 get_footer();

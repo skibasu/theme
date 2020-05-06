@@ -1,4 +1,4 @@
-
+const $ = jQuery;
 const $html = $("html");
 const $body = $("body");
 let scrollTop;

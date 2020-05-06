@@ -31,14 +31,12 @@ const files = {
     cssDistPath: "./_dist/css/",
 
     // js
-    js__FILES: ["app.js"],
+    js__FILES: ["app.js", "vendors/jQuery/jquery-3.4.1.min.js"],
     jsSrcPath: "./assets/js/",
     jsAllFiles: "./assets/js/**/*.js",
     jsDistPath: "./_dist/js/",
 
-
     // php
-
     phpAllFiles: "./**/*.php",
 
 };
@@ -46,7 +44,7 @@ const files = {
 // Browser sync task
 const browserSyncTask = () =>
     browserSync.init({
-        proxy: "http://localhost/",//enter proxy adress
+        proxy: "http://localhost:8888/groen",//enter proxy adress
         notify: true
     });
 // Sass task

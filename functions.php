@@ -24,9 +24,6 @@ require_once( get_template_directory() . '/includes/register-shordcodes/register
 /* get template part width variables */
 require_once( get_template_directory() . '/includes/template-part-variable/jpr-get-template-part-with-vars.php' );
 
-/* flexible content fields */
-require_once( get_template_directory() . '/includes/display-theme-block/display-theme-block.php' );
-
 /* remove emoji */
 require_once( get_template_directory() . '/includes/remove-emoji/remove-emoji.php' );
 
@@ -35,6 +32,9 @@ require_once( get_template_directory() . '/includes/wp-remove-version/wp-remove-
 
 /* cf7 settings */
 require_once( get_template_directory() . '/includes/cf7-settings/cf7-settings.php' );
+
+/* acf blocks */
+require_once( get_template_directory() . '/includes/acf-blocks/acf-blocks.php' );
 
 
 

@@ -1,11 +1,14 @@
 <?php
-function activate_support() {
+
+function activate_support() {  
     add_theme_support('menus');
     add_theme_support( 'post-thumbnails' );
 
     register_nav_menu('primary', 'Primary navigation');
     register_nav_menu('secondary', 'Secondary navigation');
-  
+
+    add_theme_support( 'title-tag' );
+ 
    
     // add_image_size( 'page-logo', 150, 80 );
     // add_image_size( 'page-logo-small', 114, 51 );
